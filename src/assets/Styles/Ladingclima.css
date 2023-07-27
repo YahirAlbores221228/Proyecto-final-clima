@@ -1,0 +1,126 @@
+
+body{
+margin: 0;
+box-sizing: border-box;
+padding: 0;
+}
+.Container-fondo-lading{
+background-image: url("../Img/fondo10.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+z-index: 1;
+position:relative;
+transition: all 3s;
+}
+.background-sunny {
+  background-image: url("../Img/fondo12.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+height: 100vh;
+z-index: 1;
+position:relative;
+transition: all 3s;
+}
+.Container-fondo-lading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.607); /* Establece un color de fondo negro con una opacidad del 50% */
+  z-index:1;
+}
+/*aqui volvi a modificar*/
+.containe{
+display: flex;
+margin-top: 2%;
+margin-left: 20%;
+justify-content: center;
+align-items:center;
+height: 90%;
+width: 60%;
+border-radius: 5px;
+position:absolute;
+background-image: url("../Img/fondo13.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+z-index: 98;
+transition: all 3s;
+}
+
+
+/*se agrego para el otro fondo**/
+.containe2{
+display: flex;
+margin-top: 2%;
+margin-left: 20%;
+justify-content: center;
+align-items:center;
+height: 90%;
+width: 60%;
+border-radius: 5px;
+position:absolute;
+background-image: url("../Img/fondo16.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+z-index: 98;
+transition: all 3s;
+}
+.datos-clima{
+width: 50%;
+height: 100%;
+background-color: #89834e81;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 10px;
+}
+/*aqui agregue ese container*/
+.container-grados-tipos-clima{
+background-color: rgba(206, 206, 206, 0.479);
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+.grados-clima{
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: white;
+}
+.conatiner-historial
+{
+overflow-y:auto;
+}
+.conatiner-historial::-webkit-scrollbar {
+width: 0px;
+border-radius: none;
+background-color: rgba(255, 255, 255, 0.8);
+}
+.container-div-table{
+padding-top: 5px;
+text-align: center;
+margin-bottom: 20px;
+}
+.container-table-button{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.Container-temp{
+display: flex;
+justify-content: center;
+gap: 30px;
+align-items: center;
+text-align: center;
+}
